@@ -1,0 +1,36 @@
+.link {
+    padding: 50px;
+  }
+  
+  li {
+    list-style: none;
+    padding: 5px;
+
+  }
+  
+  a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+  
+ a:hover {
+    color: var(--dark);
+    text-decoration: underline;
+  }
+  
+  .logos a{
+    padding: 10px;
+  }
+  
+  .logo {
+    color: var(--dark);
+  }
+  
+  
+  /* FOOTER */
+  footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark);
+    margin: 10px;
+  }
