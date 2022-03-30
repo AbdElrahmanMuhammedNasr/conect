@@ -4,6 +4,7 @@ import '../Css/footerStyle.css'
 export const Footer = () => {
     return (
         <>
+        <br></br>
             <section className="link" style={{backgroundColor:'white'}}>
                 <div className="logos">
                     <a href="#"><i className="fab fa-facebook-square fa-2x logo"></i></a>

@@ -32,7 +32,7 @@ export const Dashbord = () => {
         }
     ])
     const goTo = (event, path) => {
-        navigate('/dashbord/' + path)
+        navigate('/dashboard/' + path)
 
     }
 

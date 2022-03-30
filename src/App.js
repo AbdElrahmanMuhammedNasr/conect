@@ -7,6 +7,9 @@ import { UserDetails } from './components/User/userPage2/userDetail';
 import { Login } from './components/Admin/login';
 import { Dashbord } from './components/Admin/dashbord';
 import { Listing } from './components/Admin/listing';
+import { Add } from './components/Admin/add';
+import { Search } from './components/Admin/search';
+import { Setting } from './components/Admin/setting';
 // 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
   const App = () => {
     return (
@@ -19,8 +22,11 @@ import { Listing } from './components/Admin/listing';
     
                     {/*  admin */}
                     <Route path='/admin' element={<Login/>} />
-                    <Route path='/dashbord' element={<Dashbord/>} />
-                    <Route path='/dashbord/listing' element={<Listing/>} />
+                    <Route path='/dashboard' element={<Dashbord/>} />
+                    <Route path='/dashboard/listing' element={<Listing/>} />
+                    <Route path='/dashboard/add' element={<Add/>} />
+                    <Route path='/dashboard/search' element={<Search/>} />
+                    <Route path='/dashboard/setting' element={<Setting/>} />
                     
                     <Route path="*"
                             element={
