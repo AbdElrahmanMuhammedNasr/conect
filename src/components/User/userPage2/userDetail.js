@@ -8,7 +8,7 @@ export const UserDetails =()=>{
   let location = useLocation();
   let [params] = useSearchParams();
 
-    const [client , setClient] = useState([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1])
+    const [client , setClient] = useState([1,1,1,1,1,1,1,1,1])
     const [appear , setAppear] = useState(false)
     const [index , setIndex] = useState(null)
 
@@ -45,7 +45,7 @@ export const UserDetails =()=>{
                             </div>
                             {
                                 (i == index && appear) ?  <div className="col-lg-12" >
-                                    <div className="card text-center" style={{backgroundColor:'#e3e2e2',boxShadow:'5px 5px 30px #6c6a6a', margin:'10px 0px '}}>
+                                    <div className="card text-center" style={{backgroundColor:'white',boxShadow:'5px 5px 30px #6c6a6a', margin:'10px 0px '}}>
                                             <div className="card-header">
 
                                                 <div className='float-left'>

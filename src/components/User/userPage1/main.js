@@ -1,7 +1,7 @@
 import React, {useState } from 'react'
-import image from '../../assest/1.svg'
-import arrg from '../../assest/arrg.svg'
-import video from '../../assest/intro.mp4'
+import image from '../../../assest/1.svg'
+import arrg from '../../../assest/arrg.svg'
+import video from '../../../assest/intro.mp4'
 import { useNavigate } from "react-router-dom";
 
 
@@ -41,11 +41,12 @@ export const Main = ()=>{
     }
     return (
         <>
-        {/* ,border:'2px solid #6c757d' */}
-        {/* <div className="container" style={{height:'500px', borderRadius:'20px', backgroundColor:'#e3e2e2', boxShadow:'5px 5px 30px #6c6a6a'}}> */}
-        <div className="container" style={{height:'500px', borderRadius:'20px'}}>
+        {/* <div className="" style={{width:'90%',height:'auto',margin:'auto', borderRadius:'20px',border:'2px solid #6c757d'}}> */}
+        {/* <div className="" style={{width:'90%',height:'auto',margin:'auto', borderRadius:'20px',padding:'20px' ,backgroundColor:'#e3e2e2', boxShadow:'5px 5px 30px #6c6a6a', overflow:'hidden'}}> */}
+        <div className="" style={{width:'90%',height:'auto',margin:'auto', borderRadius:'20px'}}>
+            
             <div className="row">
-                <div className="col-lg-8 col-sm-12">
+                <div className="col-lg-7 col-sm-12">
                     <div  style={{margin:'10% 0px',color:'#2d3748'}}>
                         <h1 style={{fontSize:'3.5rem',fontStyle:'bold',fontWeight:'700'}}>Turn your Business </h1>
                         <h1 style={{fontSize:'3.5rem',fontStyle:'bold',fontWeight:'700'}}>into a <span style={{color: "#00ab55"}}> success </span> mode.</h1>
@@ -55,8 +56,8 @@ export const Main = ()=>{
                      </p>
                 </div>
 
-                 <div className="col-4 d-none d-sm-block">
-                 <img style={{width: '102%',height: '245%'}} src={image}  class="d-inline-block align-text-top" />
+                 <div className="col-5 d-none d-sm-block" style={{backgroundImage:`url(`+image+`)`,backgroundRepeat:'no-repeat', backgroundSize:'100% 100%'}}>
+                 {/* <img style={{width: '102%',height: '245%'}} src={image}  class="d-inline-block align-text-top" /> */}
                 </div>
             </div>
         </div>
