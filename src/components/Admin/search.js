@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router";
+import { useSearchParams } from 'react-router-dom';
+
 
 export const Search = () => {
+    let navigate = useNavigate()
+    const location = useLocation();
+    const [searchParams, setSearchParams] = useSearchParams({});
+
 
     const [users, setUser] = useState([1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1])
 
     const getUserDetails = (event, i) => {
-        console.log(i)
+         navigate(location.pathname + '?user=' + i)
 
     }
     const deleteUser = (event, i) => {

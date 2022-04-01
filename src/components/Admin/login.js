@@ -8,7 +8,7 @@ export const Login = () => {
 
     const Submit = (event) => {
 
-        navigate('/dashbord')
+        navigate('/dashboard')
 
     }
     return (

@@ -7,7 +7,7 @@ export const Navbar = () => {
         { name: 'Home', path: '/dashboard' },
         { name: 'Add', path: '/dashboard/add' },
         { name: 'Searching', path: '/dashboard/search' },
-        { name: 'Listing', path: '/dashboard/list' },
+        { name: 'Listing', path: '/dashboard/listing' },
         { name: 'Setting', path: '/dashboard/setting' },
 
     ])
@@ -42,7 +42,7 @@ export const Navbar = () => {
                     <NavLink to={`/admin`} className="navbar-brand" >
                         <span style={{ fontSize: '1rem' }}>
                             <i class="fa fa-user-circle " aria-hidden="true"> </i>
-                            <span style={{ color: '#00ab55' }}> Admin  Login </span>
+                            <span style={{ color: '#04763d', fontWeight:'bold' }}> Admin  Login </span>
                         </span>
                     </NavLink>
 
